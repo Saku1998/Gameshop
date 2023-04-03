@@ -1,0 +1,380 @@
+.App{
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  background: #F9DBBB;
+  overflow-x: hidden;
+
+    
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
+}
+.navbar{
+  background: #4E6E81;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  z-index: 1;
+}
+.navbar-options{
+  width: 40%;
+  height: 100%;
+  justify-content: end;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+}
+.navbar-options-option{
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 22px;
+  margin-right: 60px;
+
+}
+.navbar-options-option:hover{
+  color: white
+}
+.icon{
+  width: 10%;
+  height: 70%;
+}
+.navbar-options-counter{
+  position: absolute;
+  background-color: #F9DBBB;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  top: 8px;
+  right: 210px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.onPromotion{
+  width: 100%;
+  height: 45%;
+  margin-top: 60px;
+  justify-content: center;
+  flex-direction: column;
+}
+.alert{
+  font-size: 35px;
+  text-align: center;
+}
+.onPromotion-images{
+  width: 230px;
+  height: 320px;
+}
+.onPromotion-section{
+  width: 700px;
+  justify-content: center;
+}
+.onPromotion-image{
+  width: 100%;
+  height: 100%;
+}
+.onPromotion-btn{
+  position: relative;
+  cursor: pointer;
+  bottom: 50px;
+  left: 75px;
+  width: 90px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+  background-color: rgb(207, 17, 17);
+  color: white;
+}
+.onPromotion-btn:hover{
+  background-color: red;
+  color: white;
+  box-shadow: 3px 3px 3px black;
+}
+.onPromotion-price{
+  position: relative;
+  top: -120px;
+  background-color: white;
+  width: 60px;
+  left: 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  box-shadow: 2px 2px 2px black;
+}
+.recommended{
+  width: 100%;
+  height: 450px;
+  justify-content: start;
+  flex-direction: column;
+}
+.recommended-section{
+  width: 80%;
+  height: 72%;
+  justify-content: center;
+}
+.recommended-images{
+  width: 60%;
+  height: 80%;
+  overflow: hidden;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.arrow{
+  font-size: 70px;
+  cursor: pointer;
+}
+.arrow:hover{
+  color: white;
+}
+.recommended-images-inside{
+  width: 255%;
+  height: 100%;
+  justify-content: space-between;
+  transition: transform 0.7s;
+}
+.recommended-images-inside-game{
+  width: 8%;
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+}
+.recommended-images-inside-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.buyandprice{
+  position: relative;
+  justify-content: space-between;
+  width: 150px;
+  height: 50px;
+  bottom: 65px;
+  left: 15px;
+}
+.addtocart{
+  justify-content: center;
+  background-color: white;
+  border: 2px black solid;
+  font-size: 30px;
+  width: 40%;
+  height: 100%;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 3px;
+}
+.price{
+  font-size: 20px;
+  font-weight: 600;
+}
+#cart:hover{
+  background-color: black;
+  color: white
+}
+.options{
+  justify-content: center;
+  flex-direction: column;
+  top: 60px;
+  right: 40px;
+  height: 200px;
+  width: 150px;
+  background: #4E6E81;
+  border: 1px solid black;
+}
+.option{
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px black solid;
+  cursor: pointer;
+}
+.option:hover{
+  background: #2780b3;
+}
+.allgames{
+  justify-content: start;
+  flex-direction: column;
+  width: 70%;
+  height: 800px;
+  margin: 50px auto 50px auto;
+}
+.allgames-searchbar{
+  justify-content: center;
+  height: 100px;
+  width: 350px;
+}
+.allgames-searchbar input{
+  width: 250px;
+  height: 40px;
+  padding: 6px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.allgames-searchbar-find{
+  font-size: 22px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #4E6E81;
+  cursor: pointer;
+}
+.allgames-games{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  grid-template-rows: auto;
+  overflow: auto;
+}
+.allgames-games-game{
+  height: 220px;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  box-shadow: 3px 3px 5px black;
+}
+.allgames-games-game-image{
+  width: 100%;
+  height: 80%;
+}
+.allgames-games-game-add{
+  justify-content: space-around;
+  font-size: 25px;
+  width: 100%;
+  height: 20%;
+  background-color: #4E6E81;
+}
+.allgames-reset{
+  height: 40px;
+  background-color: #4E6E81;;
+  width: 40px;
+  margin-left: 5px;
+  border-radius: 100%;
+  justify-content: center;
+  font-size: 22px;
+}
+.allgames-reset:hover, .allgames-searchbar-find:hover{
+  background-color: #2780b3;
+}
+.smaller{
+  width: 45px;
+  height: 35px;
+  cursor: pointer;
+}
+.smaller:hover{
+  color: white;
+  background-color: black;
+}
+.no-bottom-radius{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.platforms{
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  top: 100px;
+  right: 190px;
+  height: 200px;
+  width: 150px;
+  background: #4E6E81;
+}
+.years{
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  top: 139px;
+  right: 190px;
+  height: 200px;
+  width: 150px;
+  background: #4E6E81;
+}
+.types{
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  top: 179px;
+  right: 190px;
+  height: 200px;
+  width: 150px;
+  background: #4E6E81;
+}
+.checkout{
+  width: 15%;
+  padding: 15px;
+  height: 100px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  top: 80px;
+  right: 150px;
+  z-index: 1;
+}
+.checkout-all{
+  width: 20%;
+  height: 300px;
+  top: 80px;
+  right: 150px;
+  flex-direction: column;
+  justify-content: start;
+  z-index: 1;
+}
+.product{
+  justify-content: space-between;
+  padding: 0px 15px;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+}
+.checkout-summary{
+  width: 400px;
+  background-color: white;
+  text-align: center;
+}
+.buy-now{
+  justify-content: space-evenly;
+}
+.buy-now button{
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.logo{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.buy-now, .product, .checkout-all, .types, .years, .allgames-reset, .allgames-games-game-add, .allgames-games-game, .allgames-searchbar-find, .allgames-searchbar,
+.allgames, .option, .options, .addtocart, .buyandprice, .recommended-images-inside, .recommended-section, .recommended, .onPromotion-section, .onPromotion,
+.navbar-options-counter, .navbar-options-option, .navbar-options, .navbar{
+  display: flex;
+  align-items: center;
+}
+
+.checkout-all, .checkout, .types, .years, .platforms, .options, .navbar, .App{
+  position: fixed;
+}
